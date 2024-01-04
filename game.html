@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demo">
+    <title>Demo</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <link href="styles.css" rel="stylesheet">
+  <link href="headers.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <span class="logo-text me-2">Kho Tài Nguyên</span>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">Trang Chủ</a></li>
+                <li><a href="#" class="nav-link px-2 link-body-emphasis">Danh Mục</a>
+                  <ul class="sub-menu">
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Game</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Phim</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="nav-link px-2 link-body-emphasis">Hướng Dẫn</a></li>
+                <li><a href="#" class="nav-link px-2 link-body-emphasis">Giới Thiệu</a></li>
+              </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder="Bạn muốn tìm..." aria-label="Search">
+                  <button class="btn btn-primary ms-2" type="submit">Tìm</button>
+                </div>
+              </form>
+              </div>
+        </div>
+      </header>
+
+      <div class="container my-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis" href="index.html">
+                        <span class="visually-hidden">Home</span>
+                        Trang chủ
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="link-body-emphasis" href="game.html">
+                        <span class="visually-hidden">Game</span>
+                        Game
+                    </a>
+                    </li>    
+            </ol>
+        </nav>
+
+        <footer class="footer fixed-bottom bg-dark text-white">
+            <div class="container p-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" class="text-white">Facebook</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/" class="text-white">Youtube</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.donate.com/" class="text-white">Donate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a href="#top" class="text-white">Quay về đầu trang</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+            <path id="folder-icon" d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
+        </svg>
+
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+        $(document).ready(function() {
+        $('.sub-menu').hide(); // Ẩn danh sách con ban đầu
+        $('.nav-link.link-body-emphasis').click(function(e) {
+        e.preventDefault();
+        $(this).next('.sub-menu').slideToggle(300); // Hiển thị/ẩn danh sách con khi nhấp vào danh mục
+        });
+        });
+        </script>
+
+</body>
+</html>  
