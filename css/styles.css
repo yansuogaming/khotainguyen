@@ -6,6 +6,13 @@
   user-select: none;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    display: block !important;
+    min-width: auto;
+
+  }
+}
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
@@ -76,7 +83,7 @@
 }
 
 body {
-    background-color: #222222;
+    background-color: #b4b4b4;
 }
 
 .logo-text {
@@ -101,9 +108,27 @@ body {
     outline: none;
 }
 
+
 .list-inline-item:not(:last-child)::after {
   content: " | ";
 }
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 
 .white-text {
   color: white;

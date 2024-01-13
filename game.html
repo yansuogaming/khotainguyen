@@ -5,49 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Demo">
     <title>Games</title>
-    
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/headers.css" rel="stylesheet">
-    <script src="js/googleapi.js"></script>
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
 </head>
 <body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <path class="corner-icon" id="folder-icon" d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
+</svg>
+
     <header class="p-3 mb-3 border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-              <span class="logo-text me-2">Kho Tài Nguyên</a></span>
+              <span class="logo-text me-2">Kho Tài Nguyên</span>
             </a>
     
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.html" class="nav-link px-2 link-secondary">Trang Chủ</a></li>
-                <li><a href="#" class="nav-link px-2 link-body-emphasis">Danh Mục</a>
-                  <ul class="sub-menu">
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Game</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Phim</a></li>
-                  </ul>
-                </li>
-                <li><a href="huongdan.html" class="nav-link px-2 link-body-emphasis">Hướng Dẫn</a></li>
-                <li><a href="gioithieu.html" class="nav-link px-2 link-body-emphasis">Giới Thiệu</a></li>
-              </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <div class="input-group">
-                  <input type="search" class="form-control" placeholder="Bạn muốn tìm..." aria-label="Search">
-                  <button class="btn btn-primary ms-2" type="submit">Tìm</button>
-                </div>
-              </form>
+            <div class="div-wrapper">
+              <div class="overlap-group-4">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+                  <div class="container-fluid"> <!-- Thêm container-fluid để bọc navbar -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle dropdown-toggle-custom" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DANH MỤC
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Game</a></li>
+                            <li><a class="dropdown-item" href="#">Phim</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a href="huongdan.html" class="nav-link px-2 link-body-emphasis">Hướng Dẫn</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="gioithieu.html" class="nav-link px-2 link-body-emphasis">Giới Thiệu</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
               </div>
-        </div>
-      </header>
+            </div>
 
-      <div class="container my-5">
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 ms-lg-auto" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Bạn muốn tìm..." aria-label="Search">
+                    <button class="btn btn-primary ms-2" type="submit">Tìm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </header>
+
+    <div class="container my-5">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
                 <li class="breadcrumb-item">
@@ -61,48 +83,59 @@
                         <span class="visually-hidden">Game</span>
                         Game
                     </a>
-                    </li>    
+                </li>    
             </ol>
         </nav>
 
         <footer class="footer fixed-bottom bg-dark text-white">
-            <div class="container p-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/" class="text-white">Facebook</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.youtube.com/" class="text-white">Youtube</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.donate.com/" class="text-white">Donate</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 text-end">
-                        <a href="#top" class="text-white">Quay về đầu trang</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
-            <path id="folder-icon" d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a2 2 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139q.323-.119.684-.12h5.396z"/>
-        </svg>
+          <div class="container p-3">
+              <div class="row">
+                  <div class="col-md-6">
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a href="https://www.facebook.com/" class="text-white">Facebook</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.youtube.com/" class="text-white">Youtube</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.donate.com/" class="text-white">Donate</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 text-end">
+                      <a href="#top" class="text-white">Quay về đầu trang</a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <script src="js/googleapi.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://apis.google.com/js/api.js"></script>
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+ 
+      <script>
+      // Hàm xử lý sau khi lấy danh sách files
+      function listFiles() {
+        gapi.client.drive.files.list({
+          'pageSize': 10,
+          'fields': 'nextPageToken, files(id, name, mimeType)'
+        }).then(function(response) {
+          var files = response.result.files;
+          var fileListElement = document.getElementById('fileList');
+          for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var fileElement = document.createElement('p');
+            fileElement.textContent = file.name;
+            fileListElement.appendChild(fileElement);
+          }
+        });
+      }
+    </script>
+
+    </div>
         
-
-
-        <script>
-        $(document).ready(function() {
-        $('.sub-menu').hide(); // Ẩn danh sách con ban đầu
-        $('.nav-link.link-body-emphasis').click(function(e) {
-        e.preventDefault();
-        $(this).next('.sub-menu').slideToggle(300); // Hiển thị/ẩn danh sách con khi nhấp vào danh mục
-        });
-        });
-        </script>
 
 </body>
 </html>  
